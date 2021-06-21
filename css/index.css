@@ -26,7 +26,7 @@ header {
 }
 
 .start {
-    padding: 15px 15px;
+    padding: 12px 25px;
     border: 1px solid black;
 }
 
@@ -36,7 +36,7 @@ header {
 }
 
 .login {
-    padding: 0 1em;
+    padding: 0 2em;
 }
 
 .login:hover {
