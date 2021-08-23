@@ -273,6 +273,26 @@
         .disabled33 {
           background-color: rgba(219, 220, 221, 0.33);
         }
+        .submit-button-mobile {
+          border-radius: 3px;
+          background-color: rgba(13, 102, 208, 1);
+          color: rgba(255, 255, 255, 1);
+        }
+        .submit-button-mobile:hover {
+          border-radius: 3px;
+          background-color: rgba(94, 152, 222, 0.50);
+          color: rgba(255, 255, 255, 1);
+        }
+        .submit-button-mobile:active {
+          border-radius: 3px;
+          background-color: rgba(61, 133, 217, 0.80);
+          color: rgba(255, 255, 255, 1);
+        }
+        .submit-button-mobile:disabled {
+          border-radius: 3px;
+          background-color: rgba(219, 220, 221, 1);
+          color: rgba(232, 232, 233, 0.10);
+        }
         .primary-default-button {
           width: 200px;
           height: 49px;
@@ -281,7 +301,7 @@
           color: rgba(255, 255, 255, 1);
         }
         .primary-default-button:hover {
-          /* width: 200px; */
+          width: 200px;
           height: 49px;
           border-radius: 3px;
           background-color: rgba(94, 152, 222, 0.50);
@@ -480,12 +500,15 @@
           line-height: 25px;
           letter-spacing: 1.25px;
           }
+          select {
+          -moz-appearance: radio-label;
+          }
     </style>
   </head>
 
 
-<div class="hidden lg:flex container-xl black10 px-4">
-  <header class="container mx-auto">
+<div class="hidden lg:flex container-xl black10">
+  <header class="container mx-auto px-12">
     <div class="flex justify-between items-center pt-6">
       <div class="w-2/12">
         <a class="" href="index.html">
@@ -565,8 +588,8 @@
 
 <body>
 
-<div class="hidden container-xl lg:flex pt-24 pb-16 px-5"> 
-  <div class="container mx-auto flex">
+<div class="hidden container-xl lg:flex pt-24 pb-16"> 
+  <div class="container mx-auto flex px-12">
     <div class="flex flex-col lg:w-4/12 ">
       <h3 class="mb-12">Why<br>Montivory?</h3>
     </div>
@@ -612,8 +635,8 @@
 <!-- why montivory mobile -->
 
 
-<div class="hidden lg:flex container-xl montivory100 px-5 pt-16 pb-20"> 
-  <div class="container mx-auto lg:flex">
+<div class="hidden lg:flex container-xl montivory100 pt-16 pb-20"> 
+  <div class="container mx-auto lg:flex px-12">
     <div class="flex flex-col lg:w-4/12">
       <h3 class="text-white pb-10">Our<br>Benefit</h3>
       <h6 class="text-white pb-6">Lorem ipsum dolor sitadrit in voled</h6>
@@ -642,13 +665,17 @@
           <img class="w-full" src="images/carousel.png" alt="mockupcarousel">
         </div>
         <div class="flex justify-items-start items-center gap-x-8">
-          <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1785 0.821163C13.8294 1.47204 13.8294 2.52731 13.1785 3.17819L4.35703 11.9997L13.1785 20.8212C13.8294 21.472 13.8294 22.5273 13.1785 23.1782C12.5276 23.8291 11.4724 23.8291 10.8215 23.1782L0.821499 13.1782C0.170625 12.5273 0.170625 11.472 0.821499 10.8212L10.8215 0.821163C11.4724 0.170289 12.5276 0.170289 13.1785 0.821163Z" fill="#8B95A2"/>
-          </svg>
-          <button class="text-white">01 / 12</button>
-          <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.821499 0.821163C1.47237 0.170289 2.52765 0.170289 3.17852 0.821163L13.1785 10.8212C13.8294 11.472 13.8294 12.5273 13.1785 13.1782L3.17852 23.1782C2.52765 23.8291 1.47237 23.8291 0.821499 23.1782C0.170625 22.5273 0.170625 21.472 0.821499 20.8212L9.64299 11.9997L0.821499 3.17819C0.170625 2.52731 0.170625 1.47204 0.821499 0.821163Z" fill="white"/>
-          </svg>
+          <button class="">
+            <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1785 0.821163C13.8294 1.47204 13.8294 2.52731 13.1785 3.17819L4.35703 11.9997L13.1785 20.8212C13.8294 21.472 13.8294 22.5273 13.1785 23.1782C12.5276 23.8291 11.4724 23.8291 10.8215 23.1782L0.821499 13.1782C0.170625 12.5273 0.170625 11.472 0.821499 10.8212L10.8215 0.821163C11.4724 0.170289 12.5276 0.170289 13.1785 0.821163Z" fill="rgba(219, 220, 221, 1)"/>
+            </svg>
+          </button>
+          <button class="text-button text-white">01 / 12</button>
+          <button class="">
+            <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.821499 0.821163C1.47237 0.170289 2.52765 0.170289 3.17852 0.821163L13.1785 10.8212C13.8294 11.472 13.8294 12.5273 13.1785 13.1782L3.17852 23.1782C2.52765 23.8291 1.47237 23.8291 0.821499 23.1782C0.170625 22.5273 0.170625 21.472 0.821499 20.8212L9.64299 11.9997L0.821499 3.17819C0.170625 2.52731 0.170625 1.47204 0.821499 0.821163Z" fill="rgba(255, 255, 255, 1)"/>
+            </svg>
+          </button>
         </div>
       </div>
     </div> 
@@ -686,13 +713,17 @@
           <img class="w-full" src="images/carousel.png" alt="mockupcarousel">
         </div>
         <div class="flex justify-items-start items-center gap-x-8">
-          <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1785 0.821163C13.8294 1.47204 13.8294 2.52731 13.1785 3.17819L4.35703 11.9997L13.1785 20.8212C13.8294 21.472 13.8294 22.5273 13.1785 23.1782C12.5276 23.8291 11.4724 23.8291 10.8215 23.1782L0.821499 13.1782C0.170625 12.5273 0.170625 11.472 0.821499 10.8212L10.8215 0.821163C11.4724 0.170289 12.5276 0.170289 13.1785 0.821163Z" fill="#8B95A2"/>
-          </svg>
-          <button class="text-white">01 / 12</button>
-          <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.821499 0.821163C1.47237 0.170289 2.52765 0.170289 3.17852 0.821163L13.1785 10.8212C13.8294 11.472 13.8294 12.5273 13.1785 13.1782L3.17852 23.1782C2.52765 23.8291 1.47237 23.8291 0.821499 23.1782C0.170625 22.5273 0.170625 21.472 0.821499 20.8212L9.64299 11.9997L0.821499 3.17819C0.170625 2.52731 0.170625 1.47204 0.821499 0.821163Z" fill="white"/>
-          </svg>
+          <button class="">
+            <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1785 0.821163C13.8294 1.47204 13.8294 2.52731 13.1785 3.17819L4.35703 11.9997L13.1785 20.8212C13.8294 21.472 13.8294 22.5273 13.1785 23.1782C12.5276 23.8291 11.4724 23.8291 10.8215 23.1782L0.821499 13.1782C0.170625 12.5273 0.170625 11.472 0.821499 10.8212L10.8215 0.821163C11.4724 0.170289 12.5276 0.170289 13.1785 0.821163Z" fill="rgba(219, 220, 221, 1)"/>
+            </svg>
+          </button>
+          <button class="text-button text-white">01 / 12</button>
+          <button class="">
+            <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.821499 0.821163C1.47237 0.170289 2.52765 0.170289 3.17852 0.821163L13.1785 10.8212C13.8294 11.472 13.8294 12.5273 13.1785 13.1782L3.17852 23.1782C2.52765 23.8291 1.47237 23.8291 0.821499 23.1782C0.170625 22.5273 0.170625 21.472 0.821499 20.8212L9.64299 11.9997L0.821499 3.17819C0.170625 2.52731 0.170625 1.47204 0.821499 0.821163Z" fill="rgba(255, 255, 255, 1)"/>
+            </svg>
+          </button>
         </div>
       </div>
     </div> 
@@ -701,8 +732,8 @@
 <!-- Our Benefit mobile -->
 
 
-<div class="hidden lg:flex container-xl pt-24 pb-1 px-5">
-  <div class="container mx-auto flex">
+<div class="hidden lg:flex container-xl pt-24 pb-1">
+  <div class="container mx-auto flex px-12">
     <div class="flex flex-col lg:w-4/12 ">
       <h3 class="pb-12">Find out <br>what your skill <br>lead you to</h3>
       <h6 class="pb-12">Lorem ipsum dolor sit amet</h6>
@@ -931,8 +962,8 @@
   </div>
 </div>
 
-<div class="hidden lg:flex container-xl px-5">
-  <div class="container mx-auto">
+<div class="hidden lg:flex container-xl">
+  <div class="container mx-auto px-12">
     <hr class="w-12/12">
   </div>
 </div>
@@ -1102,7 +1133,7 @@
         </div>
       </div>
     </div>
-    <button class="primary-default-button uppercase">apply</button>
+    <button class="submit-button-mobile uppercase w-full py-3">submit</button>
     <div class="pt-8"><hr></div>
     <div class="">
       <div class="flex justify-between pt-8 pb-12">
@@ -1173,7 +1204,7 @@
 <!-- your skill mobile-->
 
 
-<div class="hidden lg:flex container-xl pt-16 px-5">
+<div class="hidden lg:flex container-xl pt-16">
   <div class="lg:w-6/12 container mx-auto items-center">
     <h4 class="pb-12 text-center">Join Us</h4>
     <div class="pb-14">
@@ -1249,15 +1280,17 @@
       </div>
     </div>
     <div class="flex justify-center pb-24">
-      <button class="primary-default-button uppercase">submit</button>
+      <button class="submit-button-mobile text-button uppercase w-full py-3">submit</button>
     </div>
   </div>
 </div>
 <!-- join us mobile -->
+
+
 </body>
 
-<div class="hidden lg:flex container-xl montivory100 mx-auto px-5">
-  <footer class="container mx-auto lg:flex py-12">
+<div class="hidden lg:flex container-xl montivory100 mx-auto">
+  <footer class="container mx-auto lg:flex py-12 px-12">
     <div class="lg:w-7/12">
       <div class="flex items-center pb-5">
         <svg width="47" height="40" viewBox="0 0 47 40" fill="none" xmlns="http://www.w3.org/2000/svg">
