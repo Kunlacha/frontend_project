@@ -97,12 +97,12 @@
           letter-spacing: 1.25px;
           color: rgba(30, 34, 42, 1);
         }
-        caption {
+        .caption {
           font-family: 'Libre Franklin', sans-serif;
           font-weight: 500;
           font-size: 12px;
           line-height: 15px;
-          color: rgba(30, 34, 42, 1);
+          color: rgba(24, 43, 69, 1);
         }
         button {
           font-family: 'Libre Franklin', sans-serif;
@@ -121,6 +121,9 @@
         }
         .montivory100 {
           background-color: rgba(24, 43, 69, 1);
+        }
+        .text-montivory100 {
+          color: rgba(24, 43, 69, 1);
         }
         .montivory90 {
           background-color: rgba(24, 43, 69, 0.90);
@@ -428,9 +431,6 @@
         .background2 {
           background-image: url(images/background2-50.jpg);
         }
-        .background3 {
-          background-image: url(images/background3-first-thing.jpg);
-        }
         .background4 {
           background-image: url(images/background4-whatweprovide.png);
         }
@@ -440,7 +440,7 @@
         select {
           -moz-appearance: radio-label;
         }
-        @media (min-width: 360px) and (max-width: 767px) {
+        @media (min-width: 360px) and (max-width: 666px) {
         .manifesto {
           margin-top: 250px;
         }
@@ -449,10 +449,9 @@
           height: 640px;
           background-position-x:-20px;
           background-size: 430px auto;
-          background-repeat: no-repeat;
           }
         }
-        @media (min-width: 768px) and (max-width: 1023px) {
+        @media (min-width: 667px) and (max-width: 1023px) {
         .manifesto {
           margin-top: 420px;
         }
@@ -469,11 +468,10 @@
           margin-top: 200px;
         }
         .background1 {
-          background-image: url(images/banner-tablet.jpg);
+          background-image: url(images/background1-tablet.jpg);
           height: 700px;
           background-position-y: -265px;
           background-size: 1024px auto;
-          background-repeat: no-repeat;
           }
         }
         @media (min-width: 1440px) {
@@ -483,29 +481,28 @@
 	      .background1 {
           background-image: url(images/Hero-Banner---Leaf-01---x1.jpg);
 		      height: 780px;
-          /* background-position-y: -385px; */
           background-position-x: 75px;
           background-size: 1440px auto;
           }
         }
-        @media (min-width: 360px) and (max-width: 767px) {
+        @media (min-width: 360px) and (max-width: 666px) {
         .background2 {
           height: 640px;
-          background-position-x:-20px;
-          background-size: 430px auto;
+          background-size: cover;
           }
         }
-        @media (min-width: 768px) and (max-width: 1023px) {
+        @media (min-width: 667px) and (max-width: 1023px) {
         .background2 {
           height: 1024px;
           background-position-y: -170px;
-          background-size: 768px auto;
+          background-size: cover;
           }
         }
         @media (min-width: 1024px) and (max-width: 1439px) {
         .background2 {
           height: 700px;
           background-position-y: -550px;
+          background-size: cover;
           background-size: 1024px auto;
           }
         }
@@ -514,21 +511,21 @@
 		      height: 900px;
           background-position-y: -830px;
           background-size: cover;
-          /* background-size: 1440px auto; */
           }
         }
-        @media (min-width: 360px) and (max-width: 767px) {
+        @media (min-width: 360px) and (max-width: 666px) {
         .background3 {
+          background-image: url(images/firstthing50.jpg);
           height: 640px;
-          background-position-x:-20px;
-          background-size: 430px auto;
+          background-size: cover;
+          background-position-x:-250px;
           background-repeat: no-repeat;
           }
         }
-        @media (min-width: 768px) and (max-width: 1023px) {
+        @media (min-width: 667px) and (max-width: 1023px) {
         .background3 {
+          background-image: url(images/firstthing50.jpg);
           height: 1024px;
-          /* background-position-y: 100px; */
           background-position-x: center;
           background-size: 768px auto;
           background-size: cover;
@@ -592,7 +589,7 @@
 <body>
 <div class="w-full">
   <div class="2xl:container 2xl:mx-auto background1 px-5 md:px-8 xl:px-12">
-    <h3 class="hidden sm:flex lg:pt-56 md:pt-80">
+    <h3 class="hidden sm:flex lg:pt-56 sm:pt-80">
       Digital is your thing.<br>Making digital work <br>is our thing.</h3>
     <h4 class="sm:hidden pt-24 px-6">Digital is<br>your thing.<br>Making<br>digital work<br>is our thing.</h4>
     <div class="grid grid-cols-1 gap-1 justify-items-center place-content-end manifesto">
@@ -610,7 +607,7 @@
 
 <div class="w-full">
   <div class="2xl:container 2xl:mx-auto background2 px-5 md:px-8 xl:px-12">
-    <h3 class="hidden sm:flex xl:pt-44 lg:pt-24 md:pt-36 md:pb-5">
+    <h3 class="hidden sm:flex xl:pt-44 lg:pt-24 sm:pt-36 md:pb-5">
       We, Team Montivory, hereby delcare:
       We will lead our clients to enter this era of digital technology successfully. We will co-create, 
       as a partner, with our clients to bring achievement to
@@ -628,9 +625,9 @@
 
 <div class="w-full">
   <div class="2xl:container 2xl:mx-auto background3 px-5 md:px-8 xl:px-12">
-    <h3 class="hidden sm:flex xl:pt-60 lg:pt-52 md:pt-56 md:pb-5">
+    <h3 class="hidden sm:flex xl:pt-60 lg:pt-64 sm:pt-56 md:pb-5">
       FIRST THINGS FIRST</h3>
-    <h5 class="sm:hidden pt-28">FIRST THINGS FIRST</h5>
+    <h5 class="sm:hidden pt-24">FIRST THINGS FIRST</h5>
     <h5 class="hidden sm:flex text-left">กระบวนการที่ถูกต้อง<br>นำมาซึ่งผลลัพธ์ที่ถูกต้อง</h5>
     <p class="sm:hidden subtitle2 text-left">กระบวนการที่ถูกต้อง<br>นำมาซึ่งผลลัพธ์ที่ถูกต้อง</p>
   </div>
@@ -639,23 +636,25 @@
 <div class="w-full pt-6 sm:pt-12">
   <div class="2xl:container 2xl:mx-auto lg:flex px-5 md:px-8 xl:px-12">
     <div class="flex flex-col lg:w-4/12">
-      <h3 class="pb-3">Testimonial</h3>
-      <h5 class="pb-6 lg:w-8/12">See what People are Saying</h5>
+      <h3 class="hidden sm:flex pb-3">Testimonial</h3>
+      <h4 class="sm:hidden pb-3">Testimonial</h4>
+      <h5 class="hidden sm:flex pb-6 lg:w-8/12">See what People are Saying</h5>
+      <div class="sm:hidden subtitle2 pb-6">See what People are Saying</div>
     </div>
     <div class="flex flex-col lg:w-8/12">
       <div class="flex">
         <div class="testimonial-carousel" style="width: 750px;">
-          <div class="grid justify-items-center py-11">
+          <div class="grid justify-items-center py-7">
             <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M19.6344 0.839374C19.7567 1.06562 19.772 1.28497 19.6803 1.49605L17.762 6.11896C17.6105 6.54111 17.5563 6.85151 17.6022 7.04741C17.648 7.24331 17.8385 7.37161 18.1735 7.43231L18.9046 7.52336C19.3008 7.58406 19.583 7.68201 19.7498 7.81859C19.9166 7.95378 20 8.20349 20 8.56631L20 14.5481C20 15.1827 19.7262 15.5 19.1785 15.5L12.4659 15.5C11.9488 15.5 11.6903 15.2282 11.6903 14.6847L11.6903 8.92914C11.6903 8.68633 11.7515 8.47664 11.8724 8.29454L16.4387 1.4519C16.6514 1.14977 16.9336 0.91525 17.2838 0.749702C17.6341 0.582775 17.9761 0.5 18.3111 0.5L19.0409 0.5C19.3147 0.5 19.5135 0.613125 19.6344 0.839374ZM7.94551 0.839373C8.06784 1.06562 8.08313 1.28497 7.99138 1.49604L6.07312 6.11896C5.9216 6.54111 5.86739 6.85151 5.91326 7.04741C5.95913 7.24331 6.14957 7.37161 6.48457 7.43231L7.21574 7.52336C7.6119 7.58406 7.89408 7.68201 8.06089 7.81859C8.22908 7.95516 8.31248 8.20349 8.31248 8.56631L8.31248 14.5481C8.31248 15.1827 8.03864 15.5 7.49097 15.5L0.778427 15.5C0.26133 15.5 0.00278094 15.2282 0.00278099 14.6847L0.00278149 8.92913C0.00278151 8.68633 0.0639426 8.47664 0.184878 8.29454L4.75118 1.4519C4.96386 1.14977 5.24604 0.915249 5.59633 0.749701C5.94662 0.582774 6.28858 0.499999 6.62358 0.499999L7.35474 0.499999C7.6258 0.499999 7.82319 0.613124 7.94551 0.839373Z" fill="#1E222A"/>
+              <path d="M19.6344 0.839374C19.7567 1.06562 19.772 1.28497 19.6803 1.49605L17.762 6.11896C17.6105 6.54111 17.5563 6.85151 17.6022 7.04741C17.648 7.24331 17.8385 7.37161 18.1735 7.43231L18.9046 7.52336C19.3008 7.58406 19.583 7.68201 19.7498 7.81859C19.9166 7.95378 20 8.20349 20 8.56631L20 14.5481C20 15.1827 19.7262 15.5 19.1785 15.5L12.4659 15.5C11.9488 15.5 11.6903 15.2282 11.6903 14.6847L11.6903 8.92914C11.6903 8.68633 11.7515 8.47664 11.8724 8.29454L16.4387 1.4519C16.6514 1.14977 16.9336 0.91525 17.2838 0.749702C17.6341 0.582775 17.9761 0.5 18.3111 0.5L19.0409 0.5C19.3147 0.5 19.5135 0.613125 19.6344 0.839374ZM7.94551 0.839373C8.06784 1.06562 8.08313 1.28497 7.99138 1.49604L6.07312 6.11896C5.9216 6.54111 5.86739 6.85151 5.91326 7.04741C5.95913 7.24331 6.14957 7.37161 6.48457 7.43231L7.21574 7.52336C7.6119 7.58406 7.89408 7.68201 8.06089 7.81859C8.22908 7.95516 8.31248 8.20349 8.31248 8.56631L8.31248 14.5481C8.31248 15.1827 8.03864 15.5 7.49097 15.5L0.778427 15.5C0.26133 15.5 0.00278094 15.2282 0.00278099 14.6847L0.00278149 8.92913C0.00278151 8.68633 0.0639426 8.47664 0.184878 8.29454L4.75118 1.4519C4.96386 1.14977 5.24604 0.915249 5.59633 0.749701C5.94662 0.582774 6.28858 0.499999 6.62358 0.499999L7.35474 0.499999C7.6258 0.499999 7.82319 0.613124 7.94551 0.839373Z" fill="#182B45"/>
             </svg>
-            <p class="text-body1 text-center py-5 px-10">Sed uton perspiciatis unde omnis iste natus error sit voluptatem accusantim  dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore verita  quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem qui voluptas sit aspernatur aut odit aut fugit dose senla</p>
+            <p class="text-body1 text-montivory100 text-center py-5 px-10">Sed uton perspiciatis unde omnis iste natus error sit voluptatem accusantim  dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore verita  quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem qui voluptas sit aspernatur aut odit aut fugit dose senla</p>
             <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.365582 15.1606C0.243258 14.9344 0.227968 14.715 0.319711 14.504L2.23798 9.88103C2.38949 9.45889 2.4437 9.14849 2.39783 8.95259C2.35196 8.75669 2.16152 8.62839 1.82652 8.56769L1.09536 8.47664C0.699194 8.41594 0.417014 8.31799 0.250208 8.18141C0.0834028 8.04622 0 7.79651 0 7.43369V1.4519C0 0.8173 0.273839 0.5 0.821518 0.5H7.53406C8.05115 0.5 8.3097 0.771774 8.3097 1.31532V7.07086C8.3097 7.31367 8.24854 7.52336 8.12761 7.70546L3.5613 14.5481C3.34862 14.8502 3.06644 15.0848 2.71615 15.2503C2.36586 15.4172 2.02391 15.5 1.68891 15.5H0.959133C0.685293 15.5 0.486517 15.3869 0.365582 15.1606ZM12.0545 15.1606C11.9322 14.9344 11.9169 14.715 12.0086 14.504L13.9269 9.88103C14.0784 9.45889 14.1326 9.14849 14.0867 8.95259C14.0409 8.75669 13.8504 8.62839 13.5154 8.56769L12.7843 8.47664C12.3881 8.41594 12.1059 8.31799 11.9391 8.18141C11.7709 8.04484 11.6875 7.79651 11.6875 7.43369V1.4519C11.6875 0.8173 11.9614 0.5 12.509 0.5H19.2216C19.7387 0.5 19.9972 0.771774 19.9972 1.31532V7.07086C19.9972 7.31367 19.9361 7.52336 19.8151 7.70546L15.2488 14.5481C15.0361 14.8502 14.754 15.0848 14.4037 15.2503C14.0534 15.4172 13.7114 15.5 13.3764 15.5H12.6453C12.3742 15.5 12.1768 15.3869 12.0545 15.1606Z" fill="#1E222A"/>
+              <path d="M0.365582 15.1606C0.243258 14.9344 0.227968 14.715 0.319711 14.504L2.23798 9.88103C2.38949 9.45889 2.4437 9.14849 2.39783 8.95259C2.35196 8.75669 2.16152 8.62839 1.82652 8.56769L1.09536 8.47664C0.699194 8.41594 0.417014 8.31799 0.250208 8.18141C0.0834028 8.04622 0 7.79651 0 7.43369V1.4519C0 0.8173 0.273839 0.5 0.821518 0.5H7.53406C8.05115 0.5 8.3097 0.771774 8.3097 1.31532V7.07086C8.3097 7.31367 8.24854 7.52336 8.12761 7.70546L3.5613 14.5481C3.34862 14.8502 3.06644 15.0848 2.71615 15.2503C2.36586 15.4172 2.02391 15.5 1.68891 15.5H0.959133C0.685293 15.5 0.486517 15.3869 0.365582 15.1606ZM12.0545 15.1606C11.9322 14.9344 11.9169 14.715 12.0086 14.504L13.9269 9.88103C14.0784 9.45889 14.1326 9.14849 14.0867 8.95259C14.0409 8.75669 13.8504 8.62839 13.5154 8.56769L12.7843 8.47664C12.3881 8.41594 12.1059 8.31799 11.9391 8.18141C11.7709 8.04484 11.6875 7.79651 11.6875 7.43369V1.4519C11.6875 0.8173 11.9614 0.5 12.509 0.5H19.2216C19.7387 0.5 19.9972 0.771774 19.9972 1.31532V7.07086C19.9972 7.31367 19.9361 7.52336 19.8151 7.70546L15.2488 14.5481C15.0361 14.8502 14.754 15.0848 14.4037 15.2503C14.0534 15.4172 13.7114 15.5 13.3764 15.5H12.6453C12.3742 15.5 12.1768 15.3869 12.0545 15.1606Z" fill="#182B45"/>
             </svg>
-            <img class="pt-10 pb-5" src="images/unilever logo.png" alt="unilever's logo">
-            <h5 class="pb-5">Lorem Ipsum</h5>
-            <caption class="pb-5">Chief Executive Officer of Unilever Thailand</caption>
+            <img class="pt-10 pb-3" src="images/unilever logo.png" alt="unilever's logo">
+            <h5 class="pb-3 text-montivory100">Lorem Ipsum</h5>
+            <div class="pb-3 caption">Chief Executive Officer of Unilever</div>
           </div>
         </div>
       </div>
@@ -676,9 +675,10 @@
   </div>
 </div>
 
-<div class="w-full pt-24 pb-20">
+<div class="w-full py-20">
   <div class="2xl:container 2xl:mx-auto px-5 md:px-8 xl:px-12">
-    <h3 class="text-center pb-11">Partner</h3>
+    <h3 class="hidden sm:flex pb-11 text-center">Partner</h3>
+    <h5 class="sm:hidden pb-11 text-center">Partner</h5>
     <div class="grid grid-cols-3 gap-x-6 justify-items-center xl:grid-cols-6">
       <img class="place-self-center" src="images/Partner - Adobe - x2.png" height="40.8px" width="134.32px">
       <img class="place-self-center" src="images/Partner - Commercetools - x2.png" height="43.2px" width="236.68px">
