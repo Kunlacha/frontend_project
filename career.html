@@ -10,6 +10,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;700;800&display=swap" rel="stylesheet">
+      <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
       <style>
         h1 {
           font-family: 'Libre Franklin', sans-serif;
@@ -505,6 +506,7 @@
   </head>
 
 <body>
+
 <div class="w-full">
   <header class="2xl:container 2xl:mx-auto px-5 md:px-8 xl:px-12 py-5 md:flex md:items-center md:justify-between black10">
     <div class="flex items-center justify-between">
@@ -604,24 +606,41 @@
           <p class="text-body2 text-white">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
         </div>
       </div>
-      <div class="flex flex-col">
-        <div class="flex pb-5">
-          <img class="w-full" src="images/carousel.png" alt="mockupcarousel">
+      <!-- <div class="flex flex-col">
+        <div class="owl-carousel">
+          <div class="pb-5 item">
+            <img class="w-full" src="images/carousel.png" alt="mockupcarousel" style="width: 616px; height: 333px;">
+          </div>
+          <div class="pb-5 item">
+            <img class="w-full" src="images/carousel.png" alt="mockupcarousel" style="width: 616px; height: 333px;">
+          </div>
+          <div class="pb-5 item">
+            <img class="w-full" src="images/carousel.png" alt="mockupcarousel" style="width: 616px; height: 333px;">
+          </div>
+          <div class="pb-5 item">
+            <img class="w-full" src="images/carousel.png" alt="mockupcarousel" style="width: 616px; height: 333px;">
+          </div>
+          <div class="pb-5 item">
+            <img class="w-full" src="images/carousel.png" alt="mockupcarousel" style="width: 616px; height: 333px;">
+          </div>
+          <div class="pb-5 item">
+            <img class="w-full" src="images/carousel.png" alt="mockupcarousel" style="width: 616px; height: 333px;">
+          </div>
         </div>
         <div class="flex justify-items-start items-center gap-x-8">
-          <button class="">
+          <button class="customPrevBtn">
             <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1785 0.821163C13.8294 1.47204 13.8294 2.52731 13.1785 3.17819L4.35703 11.9997L13.1785 20.8212C13.8294 21.472 13.8294 22.5273 13.1785 23.1782C12.5276 23.8291 11.4724 23.8291 10.8215 23.1782L0.821499 13.1782C0.170625 12.5273 0.170625 11.472 0.821499 10.8212L10.8215 0.821163C11.4724 0.170289 12.5276 0.170289 13.1785 0.821163Z" fill="rgba(219, 220, 221, 1)"/>
             </svg>
           </button>
-          <button class="text-button text-white">01 / 12</button>
-          <button class="">
+          <button class="text-button text-white"><span class="currentitem">1</span>/ 12</button>
+          <button class="customNextBtn">
             <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M0.821499 0.821163C1.47237 0.170289 2.52765 0.170289 3.17852 0.821163L13.1785 10.8212C13.8294 11.472 13.8294 12.5273 13.1785 13.1782L3.17852 23.1782C2.52765 23.8291 1.47237 23.8291 0.821499 23.1782C0.170625 22.5273 0.170625 21.472 0.821499 20.8212L9.64299 11.9997L0.821499 3.17819C0.170625 2.52731 0.170625 1.47204 0.821499 0.821163Z" fill="rgba(255, 255, 255, 1)"/>
             </svg>
           </button>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
@@ -883,9 +902,6 @@
       <div class="flex w-full pb-10">
         <input class="text-input w-full" placeholder="Name*">
       </div>
-      <div class="flex w-full pb-10">
-        <input class="text-input w-full" placeholder="Company Name*">
-      </div>
     </div>
     <div class="md:flex gap-x-5">
       <div class="flex w-full pb-10">
@@ -1001,5 +1017,28 @@
     </div>
   </footer>
 </div>
+<script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script>
+            $(document).ready(function(){
+                var owl = $('.owl-carousel');
+                owl.owlCarousel({
+                    center: false,//true,false
+                    loop:false,//true,false
+                    autoWidth:true,
+                    margin:10,
+                });
+                owl.on('changed.owl.carousel', function(event) {
+                    $('.currentitem').text(event.item.index+1);
+                })
+                $('.customNextBtn').click(function() {
+                    owl.trigger('next.owl.carousel');
+                })
+                $('.customPrevBtn').click(function() {
+                    owl.trigger('prev.owl.carousel');
+                })
+            });
+        </script>
 </body>
+
 </html>
