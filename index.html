@@ -437,6 +437,19 @@
          .text-input:focus {
           outline: none;
          }
+         .text-input-error {
+          border-bottom: 1px solid rgba(235, 82, 83, 1);
+          font-family: 'Libre Franklin', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 25px;
+          letter-spacing: 0.5px;
+          padding-bottom: 8px;
+         }
+         .text-input-error:focus {
+          outline: none;
+         }
+         
         .background2 {
           background-image: url(images/background2-50.jpg);
         }
@@ -603,6 +616,60 @@
           margin: 0 auto;
           }
         }
+        label {
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14.54px;
+      }
+      .block-label>label {
+        visibility: hidden;
+      }
+      .block-error>label {
+        visibility: hidden;
+      }
+      .error {
+        color: rgba(228, 0, 43, 1);
+      }
+      .error>input {
+        border-bottom: 1px solid rgba(228, 0, 43, 1);
+        color: rgba(30, 34, 42, 1);
+      }
+      .error>.block-label>label {
+        visibility: visible;
+      }
+      .error>.block-error>label {
+        visibility: visible;
+      }
+      .focused {
+        color: rgba(13, 102, 208, 1);
+      }
+      .focused>input {
+        border-bottom: 1px solid rgba(13, 102, 208, 1);
+        color: rgba(30, 34, 42, 1);
+      }
+      .focused>.block-label>label {
+        visibility: visible;
+      }
+      .focused>.block-error>label {
+        visibility: hidden;
+      }
+      .filled {
+        color: rgba(30, 34, 42, 1);
+      }
+      .filled>input {
+        border-bottom: 1px solid rgba(30, 34, 42, 1);
+        color: rgba(30, 34, 42, 1);
+      }
+      .filled>.block-label>label {
+        visibility: visible;
+      }
+      .filled>.block-error>label {
+        visibility: hidden;
+      }
+      .block-label {
+        height: 20px;
+      }
     </style>
   </head>
 
@@ -981,7 +1048,7 @@
           <img class="w-full pb-5" src="images/profile2.png" alt="">
           <h5 class="hidden sm:flex pb-1 pr-5">Krid</h5>
           <h6 class="sm:hidden pb-1 pr-2">Krid</h6>
-          <h5 class="hidden sm:flex pb-1 pr-5">Asawanon</h5>
+          <h5 class="hidden sm:flex pb-1 pr-5">Asvanon</h5>
           <h6 class="sm:hidden pb-1 pr-2">Asvanon</h6>
           <p class="subtitle2 pb-2 pr-5">Chief Experience Officer</p>
           <div class="flex items-start">
@@ -1033,7 +1100,7 @@
 <div class="pt-12 pb-24 sm:pt-16">
   <div class="w-full lg:w-4/6 xl:w-6/12 container mx-auto items-center px-5 md:px-8 xl:px-12">
     <h4 class="pb-12 text-center">Contact Us</h4>
-    <div class="pb-10">
+    <div class="pb-5">
       <select class="joinus w-full">
         <option>Talk with us</option>
         <option class="bg-gray-400">Test1</option>
@@ -1042,24 +1109,54 @@
       </select>
     </div>
     <div class="md:flex gap-x-5">
-      <div class="flex w-full pb-10">
-        <input class="text-input w-full" placeholder="Name*">
+      <div class="flex-col w-full error">
+        <div class="block-label">
+          <label class="message">Name*</label>
+        </div>
+        <input class="text-input w-full pt-1" placeholder="Name*">
+        <div class="block-error">
+          <label class="message">Incorrect Field</label>
+        </div>
       </div>
-      <div class="flex w-full pb-10">
-        <input class="text-input w-full" placeholder="Company Name">
+      <div class="flex-col w-full focused">
+        <div class="block-label">
+          <label class="message">Company Name*</label>
+        </div>
+        <input class="text-input w-full pt-1" placeholder="Company Name">
+        <div class="block-error">
+          <label class="message">Incorrect Field</label>
+        </div>
       </div>
     </div>
     <div class="md:flex gap-x-5">
-      <div class="flex w-full pb-10">
-        <input class="text-input w-full" placeholder="Contact Number*">
+      <div class="flex-col w-full">
+        <div class="block-label">
+          <label class="message">Contact Number*</label>
+        </div>
+        <input class="text-input w-full pt-1" placeholder="Contact Number*">
+        <div class="block-error">
+          <label class="message">Incorrect Field</label>
+        </div>
       </div>
-      <div class="flex w-full pb-10">
-        <input class="text-input w-full" placeholder="Email*" type="email">
+      <div class="flex-col w-full">
+        <div class="block-label">
+          <label class="message">Email*</label>
+        </div>
+        <input class="text-input w-full pt-1" placeholder="Email*" type="email">
+        <div class="block-error">
+          <label class="message">Incorrect Field</label>
+        </div>
       </div>
     </div>
     <div class="lg:flex gap-x-5">
-      <div class="flex w-full pb-10">
-        <input class="text-input w-full" placeholder="Want to say something?">
+      <div class="flex-col w-full filled">
+        <div class="block-label">
+          <label class="message">Want to say something?</label>
+        </div>
+        <input class="text-input w-full pt-1" placeholder="Want to say something?">
+        <div class="block-error">
+          <label class="message">Incorrect Field</label>
+        </div>
       </div>
     </div>
     <div class="">
